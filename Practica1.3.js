@@ -32,7 +32,7 @@ class Size {
         this.position = new Position ();
     }
 
-    resize(newSize){
+    resize(newSize) {
         // Limitar el tamaño máximo según la posición actual
 
       const maxWidth = Math.min(this.screenSize.width - this.position.x, newSize.width);   
@@ -56,5 +56,16 @@ class Size {
       // llama al metodo resize() de la instancia size clase Size  
         
     }
+    mover(newPosition) {
+        // Limitar la posición dentro de la pantalla
+        const maxX = this.screenSize.width - this.size.width;
+        const maxY = this.screenSize.height - this.size.height;
+    
+        // Aplicar los límites de posición
+        const limitedX = Math.max(0, Math.min(newPosition.x, maxX));
+        const limitedY = Math.max(0, Math.min(newPosition.y, maxY));
+    
+        this.position.move(limitedX, limitedY);
+      }
 
    }
