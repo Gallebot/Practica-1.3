@@ -32,4 +32,29 @@ class Size {
         this.position = new Position ();
     }
 
+    resize(newSize){
+        // Limitar el tamaño máximo según la posición actual
+
+      const maxWidth = Math.min(this.screenSize.width - this.position.x, newSize.width);   
+      //screenSizen accede al ancho de la pantalla, es una propiedad de la clase ProgramWindow
+      // position.x accede a la posicion horizontal y es una propiedad de la clase Position
+      // se "restan" para calcular el espacio disponible en el lado derecho de la posicion actual de la pantalla
+      // la funcion math.min ayuda a obtener el valor minimo entre el espacio disponible y el nuevo ancho solicitado
+      // sirve para que el ancho maximo posible no exceda el tamaño disponible
+
+      const maxHeight = Math.min(this.screenSize.height - this.position.y, newSize.height); 
+      // Hace la misma funcion que la funcion anterior, pero enfocandose a el alto de la pantalla y por lo tanto al eje y 
+  
+      // límites de tamaño
+      const limitedWidth = Math.max(1, Math.min(newSize.width, maxWidth));
+      // la funcion math.max tomará el valor maximo entre 1 y el valor minimo entre el ancho nuevo y el ancho máximo
+      // esto concluye en que si el resultado es menor a 1, se establecerá 1, de lo contrario se conserva el valor
+
+      const limitedHeight = Math.max(1, Math.min(newSize.height, maxHeight));
+      // esto hace lo mismo pero enfocandose al alto
+      this.size.resize(limitedWidth, limitedHeight);
+      // llama al metodo resize() de la instancia size clase Size  
+        
+    }
+
    }
