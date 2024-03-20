@@ -9,4 +9,14 @@ class Size {
       this.width = newWidth;   //Nuevo ancho
       this.height = newHeight;  //Nuevo alto
     }
+ }
+
+  // Definir la clase Position
+  class Position {
+    constructor(x = 0, y = 0) { //Funcion constructora 
+        this.x = x;
+        this.y = y;
+    }
+
+
   }
