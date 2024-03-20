@@ -17,6 +17,9 @@ class Size {
         this.x = x;
         this.y = y;
     }
-
-
+    
+    move(newX, newY) {
+        this.x = newX;   //Nuevo X
+        this.y = newY;   //Nuevo Y
+    }
   }
