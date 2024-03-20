@@ -87,3 +87,11 @@ class Size {
   size.resize(1920,1080);
   size.width;
   size.height;
+
+  const point = new Position();
+  point.x;
+  point.y;
+
+  point.move(100,200);
+  point.x;
+  point.y;
