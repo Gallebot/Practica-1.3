@@ -1,2 +1,5 @@
 # Practica-1.3-
-Práctica 1.3 Diseño Web
+Luis Gerardo Gallegos Perez ------ (Gallebot)
+Rafael Hernandez Sanchez ----- (RafaelTDK)
+Emmanuel Juarez Tabaco ----- (emmajt07)
+Guillermo Andre DeLaLuz Hernández ----- (LuckyAidee)
