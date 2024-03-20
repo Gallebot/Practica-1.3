@@ -67,5 +67,14 @@ class Size {
     
         this.position.move(limitedX, limitedY);
       }
-
    }
+     // Implementar la función changeWindow
+    function changeWindow(programWindow) {
+      const newWindowSize = new Size(400, 300);
+      const newPosition = new Position(100, 150);
+  
+      programWindow.resize(newWindowSize);
+      programWindow.move(newPosition);
+  
+      return programWindow;
+  }
