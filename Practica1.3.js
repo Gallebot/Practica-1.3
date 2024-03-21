@@ -78,10 +78,3 @@ class Size {
   
       return programWindow;
   }
-    const window1 = new ProgramWindow();
-    console.log("Ventana original:", window1);
-    
-    const changedWindow = changeWindow(window1);
-    console.log("Ventana modificada:", changedWindow);
-    
-    
