@@ -85,3 +85,10 @@ class Size {
     
     const changedWindow = changeWindow(window1);
     console.log("Ventana modificada:", changedWindow);
+
+/*--------------------------
+  |  __                     |
+  |  / _  _ || _ |_  _ |_   |
+  |  \__)(_|||(-`|_)(_)|_   |
+  |                         |
+  --------------------------*/
