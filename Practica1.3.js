@@ -36,7 +36,7 @@ class Size {
         // Limitar el tamaño máximo según la posición actual
 
       const maxWidth = Math.min(this.screenSize.width - this.position.x, newSize.width);   
-      //screenSizen accede al ancho de la pantalla, es una propiedad de la clase ProgramWindow
+      //screenSize.width accede al ancho de la pantalla, es una propiedad de la clase ProgramWindow
       // position.x accede a la posicion horizontal y es una propiedad de la clase Position
       // se "restan" para calcular el espacio disponible en el lado derecho de la posicion actual de la pantalla
       // la funcion math.min ayuda a obtener el valor minimo entre el espacio disponible y el nuevo ancho solicitado
@@ -70,8 +70,8 @@ class Size {
    }
     // Implementar la función changeWindow
 function changeWindow(programWindow) {
-  const newWindowSize = new Size(400, 300);
-  const newPosition = new Position(100, 150);
+  const newWindowSize = new Size(-400, -300);
+  const newPosition = new Position(-100, -150);
 
   programWindow.resize(newWindowSize);
   programWindow.mover(newPosition); // Cambiar de move a mover
